@@ -39,7 +39,7 @@
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
-    "skipLibCheck": true
-    //"strictNullChecks": true /*Strict Mode of Type Narrowing*/
+    "skipLibCheck": true,
+    "strictNullChecks": true /*Strict Mode of Type Narrowing*/
   }
 }
