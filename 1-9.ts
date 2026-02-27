@@ -2,11 +2,11 @@
 //& :intersection type
 //두타입을 전부 만족하는 타입
 //중복선언 불가능(엄격)
-//type Animal = { name: string };
-//type Animal = { color: string };
-//type Cat = { age: number } & Animal;
-//let animal1: Animal = { name: "Kitty" };
-//console.log(animal1);
+type Animal = { name: string };
+// type Animal = { color: string };
+type Cat = { age: number } & Animal;
+let animal1: Animal = { name: "Kitty" };
+console.log(animal1);
 //***interface */
 //Object 타입 지정시 interface사용가능
 //extends 가능
@@ -23,8 +23,8 @@ interface Professor extends Student {
 interface Student {
   score: number;
 }
-let student1: Student = { name: "Kim", score: 78 };
-let professor1: Professor = { name: "Amy", age: 45, score: 700 };
+//let student1: Student = { name: "Kim", score: 78 };
+//let professor1: Professor = { name: "Amy", age: 45, score: 700 };
 
 //***Answer1
 interface Product {

@@ -3,10 +3,10 @@
 //하지만 Construcor parameter 타입지정은 권장
 //Rest Parameter, Default Parameter 등 가능
 class Person {
-  name: string;
+  name!: string; // definite assignment assertion
   age: number;
   constructor(name: string, age: number) {
-    this.name = name;
+    this!.name = name;
     this.age = age;
   }
   sayHi(nickName: string): string {
