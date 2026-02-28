@@ -33,6 +33,8 @@ let user1 = new User("Adam");
 user1.setLastName = "Lee"; //Using the setter to edit the private property
 user1.getFullName;
 
+//If define the "public" to the parameter in constructor
+//Can cancel the this.name = name
 class Cookie {
   constructor(public name: string) {}
 }
