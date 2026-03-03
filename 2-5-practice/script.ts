@@ -18,6 +18,7 @@ class Square {
     squareDiv.style.backgroundColor = this.bgColor;
     squareDiv.style.position = "absolute";
     //Create the random (x,y) inside of the container element(400x400)
+    //Math.random() => Create the random number 0<=x<1
     const randomX = Math.random() * (400 - this.row);
     const randomY = Math.random() * (400 - this.col);
 
