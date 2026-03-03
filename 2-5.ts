@@ -70,16 +70,14 @@ console.log(amily);
 class User2 {
   private static x = 10;
   public static y = 20;
-
-  static addOne(param: number) {
-    User2.x = User2.x + param;
-    console.log(User2.x);
+  static addOne(num: number) {
+    User2.x += num;
   }
-
-  static printX() {
+  static ReadX() {
     console.log(User2.x);
+    return User2.x;
   }
 }
 User2.addOne(3); //이렇게 하면 x가 3 더해져야함
 User2.addOne(4); //이렇게 하면 x가 4 더해져야함
-User2.printX(); //이렇게 하면 콘솔창에 x값이 출력되어야함
+User2.ReadX(); //이렇게 하면 x값이 출력되어야함
